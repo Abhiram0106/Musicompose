@@ -1,4 +1,4 @@
-package com.example.musicompose.ui.allsongslist
+package com.example.musicompose.ui.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
