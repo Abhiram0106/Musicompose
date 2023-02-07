@@ -7,34 +7,53 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicompose.ui.components.MediaControls
 import com.example.musicompose.ui.components.MusicListItemStateful
+import com.example.musicompose.ui.components.MusicSeekbar
 import com.example.musicompose.ui.components.Waveform
 
 @Composable
 fun PlayMusicScreen(modifier: Modifier = Modifier) {
 
-    Column(modifier = modifier
-        .fillMaxSize()
-        .padding(8.dp)) {
-
-        Waveform(modifier = modifier
+    Column(
+        modifier = modifier
             .fillMaxSize()
-            .weight(1f))
+            .padding(8.dp)
+    ) {
 
-        Spacer(modifier = modifier
-            .fillMaxWidth()
-            .height(12.dp))
+        Waveform(
+            modifier = modifier
+                .fillMaxSize()
+                .weight(1f)
+        )
+
+        Spacer(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(12.dp)
+        )
 
         MusicListItemStateful()
 
-        Spacer(modifier = modifier
-            .fillMaxWidth()
-            .height(12.dp))
+        Spacer(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(12.dp)
+        )
+
+        MusicSeekbar()
+
+        Spacer(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(12.dp)
+        )
 
         MediaControls()
 
-        Spacer(modifier = modifier
-            .fillMaxWidth()
-            .height(64.dp))
+        Spacer(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(64.dp)
+        )
     }
 
 }
